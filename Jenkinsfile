@@ -3,17 +3,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                sh 'echo "Building..."'
+                // Add your build commands here
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                sh 'echo "Testing..."'
+                // Add your test commands here
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                sh 'echo "Deploying..."'
+                // Add your deploy commands here
             }
         }
     }
